@@ -1,5 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Got Matar Institute of Technology</title>
+  <meta name="description"
+    content="Campus address, office directory, and a message form for Got Matar Institute of Technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="topbar"></div>
+  <header class="site">
+    <div id="nav-container"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Campus locator + office directory ===== -->
+    <section style="padding-top:48px;">
+      <div class="eyebrow">Fig. 16 &mdash; Site &amp; Directory</div>
+      <h2 class="section-title">Get in touch with GMIT</h2>
+      <p class="lede">Visit the campus, write to a specific office below, or send a message through the form and we'll
+        route it to the right desk.</p>
+
+      <div class="split" style="margin-top:44px;">
+
+        <!-- Schematic campus site plan -->
+        <div>
+          <div class="site-plan grid-bg blueprint-frame">
+            <div style="position:relative; height:100%;">
+              <div class="campus-block" style="top:8%; left:8%; width:36%; height:30%;"></div>
+              <div class="campus-block" style="top:44%; left:8%; width:36%; height:24%;"></div>
+              <div class="campus-block" style="top:8%; left:54%; width:38%; height:60%;"></div>
+
+              <div class="callout" style="top:2%; left:8%;">MAIN GATE &uarr;</div>
+              <div class="callout" style="top:40%; left:8%;">ADMIN BLOCK</div>
+              <div class="callout" style="top:70%; left:8%;">VISITOR PARKING</div>
+              <div class="callout" style="top:2%; left:54%;">ACADEMIC BLOCK</div>
+
+              <div class="fig-label" style="position:absolute; bottom:6px; left:8px;">N&uarr; &nbsp;SCALE: N.T.S.</div>
+              <div class="fig-label" style="position:absolute; bottom:6px; right:8px;">DRG. GMIT&ndash;SP&ndash;01</div>
+            </div>
+          </div>
+          <p class="fig-label" style="margin-top:12px;">Enter via the Main Gate on NH-34; the Admin Block reception
+            directs visitors to the correct office.</p>
+        </div>
+
+        <!-- Address, office directory, hours -->
+        <div>
+          <div class="contact-block">
+            <span class="fig-label">Campus Address</span>
+            <address style="font-style:normal; margin:0; color:var(--ink-soft);">
+              Got Matar Institute of Technology<br>
+              NH-34, Gotmatar,<br>
+              Uttar Pradesh, India &mdash; 244001
+            </address>
+          </div>
+
+          <span class="fig-label">Office Directory</span>
+          <table>
+            <thead>
+              <tr>
+                <th>Office</th>
+                <th>Email</th>
+                <th>Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Director's Office</strong></td>
+                <td><a href="mailto:admissions@gmit.ac.in">admissions@gmit.ac.in</a></td>
+                <td>+91 (591) 220-4471</td>
+              </tr>
+              <tr>
+                <td><strong>Manager's Office</strong></td>
+                <td><a href="mailto:admissions@gmit.ac.in">admissions@gmit.ac.in</a></td>
+                <td>+91 (591) 220-4471</td>
+              </tr>
+              <tr>
+                <td><strong>Admissions Office</strong></td>
+                <td><a href="mailto:admissions@gmit.ac.in">admissions@gmit.ac.in</a></td>
+                <td>+91 (591) 220-4471</td>
+              </tr>
+              <tr>
+                <td><strong>Registrar's Office</strong></td>
+                <td><a href="mailto:registrar@gmit.ac.in">registrar@gmit.ac.in</a></td>
+                <td>+91 (591) 220-4400</td>
+              </tr>
+              <tr>
+                <td><strong>Finance Office</strong></td>
+                <td><a href="mailto:admissions@gmit.ac.in">admissions@gmit.ac.in</a></td>
+                <td>+91 (591) 220-4471</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="contact-block" style="margin-top:26px;">
+            <span class="fig-label">Office Hours</span>
+            <p>Monday &ndash; Friday, 8:00 AM &ndash; 5:00 PM<br>Closed on institute holidays</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Message form ===== -->
+    <section>
+      <div class="eyebrow">Fig. 17 &mdash; Send a Message</div>
+      <h2 class="section-title">Write to us</h2>
+      <p class="lede">General enquiries reach the Admissions Office first and are forwarded on if another department is
+        a better fit.</p>
+
+      <form action="https://formsubmit.co/se.ojalex@gmail.com" method="POST">
+        <div>
+          <label for="c-name">Full Name</label>
+          <input id="c-name" type="text" name="name" placeholder="Your full name" required>
+        </div>
+        <div>
+          <label for="c-email">Email</label>
+          <input id="c-email" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="c-subject">Subject</label>
+          <input id="c-subject" type="text" name="subject" placeholder="What is this about?" required>
+        </div>
+        <div>
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" name="message" placeholder="Write your message here" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:fit-content;">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div id="footer"></div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+<!---<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +193,6 @@
 </header>
 
 <main id="main">
-
   <section style="padding-top:48px;">
     <div class="eyebrow">Fig. 16 &mdash; Contact</div>
     <h2 class="section-title">Get in touch with GMIT</h2>
@@ -65,7 +215,7 @@
         <div class="contact-block"><span class="fig-label">Admissions Office</span><p><a href="mailto:admissions@gmit.ac.in">admissions@gmit.ac.in</a><br>+91 (591) 220-4471</p></div>
         <div class="contact-block"><span class="fig-label">Registrar's Office</span><p><a href="mailto:registrar@gmit.ac.in">registrar@gmit.ac.in</a><br>+91 (591) 220-4400</p></div>
         <div class="contact-block"><span class="fig-label">Finance Office</span><p><a href="mailto:admissions@gmit.ac.in">admissions@gmit.ac.in</a><br>+91 (591) 220-4471</p></div>
-        <!---<div class="contact-block"><span class="fig-label">Monitoring & Evaluation</span><p><a href="mailto:registrar@gmit.ac.in">jumaalex448@gmail.com</a><br>+254712008131</p></div>--->
+        <!-<div class="contact-block"><span class="fig-label">Monitoring & Evaluation</span><p><a href="mailto:registrar@gmit.ac.in">jumaalex448@gmail.com</a><br>+254712008131</p></div>->
         <div class="contact-block"><span class="fig-label">Office Hours</span><p>Monday &ndash; Friday, 8:00 AM &ndash; 5:00 PM<br>Closed on institute holidays</p></div>
         
       </div>
@@ -85,7 +235,7 @@
       <label for="c-msg">Message</label><textarea id="c-msg" type="message" name="message" placeholder="Write your message here" required></textarea>
       <button class="btn btn-primary" type="submit" style="width:fit-content; border:1px solid var(--ink);">Send Message</button>
     </form>
-  </section>
+  </section> 
 </main>
 
 <footer>
@@ -94,4 +244,4 @@
 
 <script src="js/script.js"></script>
 </body>
-</html>
+</html>--->
