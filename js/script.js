@@ -21,3 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+// Load the footer content from an external HTML file.
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("footer.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Footer not found");
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.error(error));
+});
+
