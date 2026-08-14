@@ -1,20 +1,22 @@
 /* ==========================================================
    Got Matar Institute of Technology — shared stylesheet
    Blueprint / technical-drawing visual system
+   Palette: institutional green &amp; gold, drawn from the real
+   GMIT crest (see campus gate signage), on a warm parchment base.
    ========================================================== */
 
 :root {
-    --ink: #101F3C;
-    --ink-soft: #3B4A6B;
-    --paper: #F3F4F0;
+    --ink: #17231D;
+    --ink-soft: #47564C;
+    --paper: #F6F4EC;
     --paper-raised: #FFFFFF;
-    --line-blue: #2F5D9C;
-    --line-blue-soft: #B9C9E3;
-    --amber: #E0952E;
-    --amber-deep: #B9701A;
-    --teal: #0B4F6C;
-    --rust: #A24A3B;
-    --ink-dark: #0A1730;
+    --line-blue: #1F5C38;
+    --line-blue-soft: #C9D9CB;
+    --amber: #C79A2B;
+    --amber-deep: #9C7A1E;
+    --teal: #2C5B6B;
+    --rust: #A13F2E;
+    --ink-dark: #122016;
 }
 
 * {
@@ -135,7 +137,7 @@ button {
 /* ===== Top bar ===== */
 .topbar {
     background: var(--ink-dark);
-    color: #D9E0EE;
+    color: #D8E3DA;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
     padding: 6px 24px;
@@ -146,7 +148,7 @@ button {
 }
 
 .topbar a {
-    color: #D9E0EE;
+    color: #D8E3DA;
     text-decoration: none;
     margin-left: 16px;
 }
@@ -963,7 +965,7 @@ textarea {
 
 footer {
     background: var(--ink-dark);
-    color: #B9C2D6;
+    color: #B7C6BA;
     padding: 48px 0 24px;
     margin-top: 8px;
 }
@@ -979,7 +981,7 @@ footer {
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid #263457;
+    border-bottom: 1px solid #28382E;
 }
 
 @media (max-width:800px) {
@@ -1007,7 +1009,7 @@ footer {
 
 .footer-grid a {
     text-decoration: none;
-    color: #B9C2D6;
+    color: #B7C6BA;
     font-size: 13.5px;
 }
 
