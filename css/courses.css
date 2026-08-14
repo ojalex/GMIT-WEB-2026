@@ -1,0 +1,8 @@
+        /* page-scoped: let wide course tables scroll horizontally on small screens instead of breaking layout */
+        .table-scroll {
+            overflow-x: auto;
+        }
+
+        .table-scroll table {
+            min-width: 720px;
+        }
